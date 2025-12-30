@@ -445,6 +445,79 @@ body::before {
     letter-spacing: -0.02em;
 }
 
+/* Apps Section */
+.apps-section {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.apps-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.app-card {
+    background-color: #374151;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #4B5563;
+    transition: all 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.app-header {
+    margin-bottom: 1.5rem;
+}
+
+.app-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #F9FAFB;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+}
+
+.app-description {
+    font-size: 1.1rem;
+    color: #D1D5DB;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.app-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.75rem;
+    background-color: #D97706;
+    color: #1F2937;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+}
+
+.app-link:hover {
+    background-color: #F59E0B;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4);
+}
+
+.app-link svg {
+    width: 16px;
+    height: 16px;
+}
+
 .notion-embed-section {
     margin-top: 4rem;
     margin-bottom: 3rem;
@@ -552,6 +625,35 @@ body::before {
 [data-theme="light"] .notion-embed-wrapper {
     border: 1px solid var(--border);
     box-shadow: 0 4px 20px var(--shadow);
+}
+
+[data-theme="light"] .app-card {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+[data-theme="light"] .app-card:hover {
+    box-shadow: 0 8px 30px var(--shadow);
+}
+
+[data-theme="light"] .app-title {
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .app-description {
+    color: var(--text-secondary);
+}
+
+[data-theme="light"] .app-link {
+    background-color: var(--accent);
+    color: white;
+    box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+}
+
+[data-theme="light"] .app-link:hover {
+    background-color: var(--accent-hover);
+    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
 }
 
 /* Main Content */
