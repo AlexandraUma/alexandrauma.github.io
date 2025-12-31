@@ -69,6 +69,15 @@ body::before {
     color: #E67E22;
 }
 
+.nav-subtitle {
+    font-weight: 400;
+    color: #9CA3AF;
+}
+
+[data-theme="light"] .nav-subtitle {
+    color: #64748b;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -991,6 +1000,10 @@ body::before {
 @media (max-width: 768px) {
     .nav-container {
         padding: 1rem;
+    }
+    
+    .nav-subtitle {
+        display: none;
     }
     
     .nav-links {
